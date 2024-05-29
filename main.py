@@ -15,6 +15,8 @@ spark = SparkSession(sc)
 
 table_name = "nyc.icebergtaxi"
 
+import pyowm # not used in the code but needed to test requirements.txt
+
 # create table if not exists
 if spark.catalog.tableExists(table_name):
     print("Table already exists")
